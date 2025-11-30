@@ -151,15 +151,29 @@ footer {
   padding: 0.5em 1em;
 }
 
-.participants-section ul {
+
+.participants-section ul.participants-list {
   margin: 0.5em 0 0 1em;
   padding: 0;
 }
 
-.participants-section li {
-  list-style-type: disc;
+.participants-section ul.participants-list li {
+  list-style-type: none;
   margin-bottom: 0.25em;
   color: #374151;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.delete-participant {
+  cursor: pointer;
+  color: #c62828;
+  font-size: 1.2em;
+  transition: color 0.2s;
+}
+.delete-participant:hover {
+  color: #a31515;
 }
 
 .participants-section p {
